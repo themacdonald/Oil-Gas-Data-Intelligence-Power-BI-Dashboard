@@ -1,52 +1,75 @@
-# Oil & Gas Safety and Process Data Intelligence Dashboard
+# 🛢️ Oil & Gas Data Intelligence Power BI Dashboard
 
-## 🔍 Objective
-This project presents a comprehensive data support analyst dashboard built in Power BI to monitor, analyze, and automate insights around safety, process integrity, training compliance, and change control within oil & gas operations.
+## 📌 Overview
+This Power BI project features a comprehensive 6-page dashboard to analyze operational safety, process verification, training compliance, incident reports, and change control management in the oil & gas industry.
 
-## 📊 Dataset Overview
-Five datasets were simulated to reflect realistic industry data scenarios:
+---
 
-- **safety_observations.csv**: Logs of site safety observations (type, category, severity, verification status)
-- **process_verifications.csv**: Results of safeguard verifications, pass/fail status, and criticality level
-- **dropped_objects.csv**: Dropped object incidents by risk level and resolution status
-- **training_assessments.csv**: Training and compliance data by module, score, and pass/fail outcome
-- **change_control_log.csv**: System changes and data integrations with statuses and ownership
+## 📂 Dataset Categories
+Each dataset contains 1,000+ simulated entries to reflect real-world operational data:
+
+| Dataset                  | Description                                                  |
+|--------------------------|--------------------------------------------------------------|
+| safety_observations.csv | Logs of site safety incidents by category, status, and date  |
+| process_verifications.csv | Verification outcomes by safeguard and criticality          |
+| dropped_objects.csv      | Reports of dropped object incidents and their resolution     |
+| training_assessments.csv | Training scores, pass/fail status, and module assessments    |
+| change_control_log.csv   | Change requests and integration data across IT systems       |
 
 Each dataset contains 1,000 records and is date stamped from 2022–2024.
+---
 
-## 📈 Dashboard Features
-### KPIs (Cards)
-- Total Observations
-- Verification Pass Rate (%)
-- Dropped Object Incidents This Month
-- Average Training Score
-- Training Completion Rate
-- Open MoC/Change Requests
+## 📊 Dashboard Pages
 
-### Visuals
-- **Line Chart**: Observations over time by severity and category
-- **Bar Chart**: Verifications by safeguard and criticality
-- **Matrix Table**: Risk level of dropped objects by area
-- **Pie Chart**: System distribution in change control logs
-- **Boxplot or Strip Plot**: Training score distributions by module
-- **Heatmap**: Open safety cases by location and status
+### 1. Executive Overview
+- KPIs: Total Observations, Pass Rate, Incidents, Avg Score, Open Changes
+- Line Chart: Safety Trends
+- Matrix: Observation Status by Location
+- Pie: Verifications by Criticality
+- Bar: Change Requests by System
 
-### Slicers
-- Location
-- Year
-- Module
-- System
-- Status
-- Category
+### 2. Safety Observations
+- KPIs: Total, Verified %, Open
+- Bar: Observations by Category
+- Line: Trends Over Time
+- Matrix: Location vs Status
+- Table: Full Log
 
-## 💡 Key Insights
-- Most common safety observation category: Slips/Trips
-- Pass rate for Process Safety Verifications: ~51%
-- Helmets and valves are the most frequently dropped objects
-- Over 65% of training modules have pass rates above 70%
-- Majority of change control tasks involve SAP and PI Historian
+### 3. Process Verifications
+- KPIs: Total, Pass %, Failed, This Month
+- Bar: By Safeguard
+- Pie: Criticality Breakdown
+- Matrix: Location vs Pass/Fail
+- Table: Failed Details
 
-## 📁 Project Structure
+### 4. Dropped Objects
+- KPIs: Total, Avg Resolution Time, This Year
+- Line: Trend Over Time
+- Matrix: Area vs Risk
+- Bar: Frequency by Object
+- Table: Open Investigations
+
+### 5. Training Assessments
+- KPIs: Total, Pass %, Avg Score
+- Bar: Score by Module
+- Boxplot: Score Distribution (via custom visual)
+- Table: Failed Learners
+
+### 6. Change Control
+- KPIs: Total, Open, This Month
+- Pie: System Distribution
+- Bar: Type of Changes
+- Matrix: System vs Status
+- Table: Unexecuted Requests
+
+---
+
+## 🧩 Data Model
+All tables connect to a single `DateTable` via their respective date fields. Relationships are one-to-many and unidirectional.
+
+---
+
+## 🛠️ Project Structure
 ```bash
 /Oil_Gas_Data_Intel_Dashboard/
 ├── safety_observations.csv
@@ -54,10 +77,13 @@ Each dataset contains 1,000 records and is date stamped from 2022–2024.
 ├── dropped_objects.csv
 ├── training_assessments.csv
 ├── change_control_log.csv
+├── date_table.csv
 ├── OilGas_Safety_Dashboard.pbix
 ├── README.md
-├── .gitignore
 ```
+
+---
+
 
 ## 🔗 Connect
 Built for industry-level portfolio impact. Connect with me:
