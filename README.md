@@ -52,7 +52,7 @@ Each dataset contains 1,000 records and is date stamped from 2022–2024.
 ### 5. Training Assessments
 - KPIs: Total, Pass %, Avg Score
 - Bar: Score by Module
-- Boxplot: Score Distribution (via custom visual)
+- Score Distribution
 - Table: Failed Learners
 
 ### 6. Change Control
