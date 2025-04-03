@@ -24,7 +24,7 @@ Each dataset contains 1,000 records and is date stamped from 2022–2024.
 ### 1. Executive Overview
 - KPIs: Total Observations, Pass Rate, Incidents, Avg Score, Open Changes
 - Line Chart: Safety Trends
-- Matrix: Observation Status by Location
+-  Observation Status by Location
 - Pie: Verifications by Criticality
 - Bar: Change Requests by System
 
@@ -32,20 +32,20 @@ Each dataset contains 1,000 records and is date stamped from 2022–2024.
 - KPIs: Total, Verified %, Open
 - Bar: Observations by Category
 - Line: Trends Over Time
-- Matrix: Location vs Status
+-  Location vs Status
 - Table: Full Log
 
 ### 3. Process Verifications
 - KPIs: Total, Pass %, Failed, This Month
 - Bar: By Safeguard
 - Pie: Criticality Breakdown
-- Matrix: Location vs Pass/Fail
+-  Location vs Pass/Fail
 - Table: Failed Details
 
 ### 4. Dropped Objects
 - KPIs: Total, Avg Resolution Time, This Year
 - Line: Trend Over Time
-- Matrix: Area vs Risk
+-  Area vs Risk
 - Bar: Frequency by Object
 - Table: Open Investigations
 
@@ -59,7 +59,7 @@ Each dataset contains 1,000 records and is date stamped from 2022–2024.
 - KPIs: Total, Open, This Month
 - Pie: System Distribution
 - Bar: Type of Changes
-- Matrix: System vs Status
+-  System vs Status
 - Table: Unexecuted Requests
 
 ---
